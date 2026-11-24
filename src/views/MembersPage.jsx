@@ -16,20 +16,22 @@ export default function MembersPage() {
             </header>
             <main className=" bg-gray-50 relative grid grid-cols-4">
                 <section className="flex justify-center mt-60">
-                    <div className="fixed flex flex-col bg-white rounded-2xl gap-4 py-8 px-6 shadow-lg border-gray-100">
-                        <div className="flex items-center gap-4 p-4">
-                            <Home />
-                            <p>Home</p>
-                        </div>
-                        <div className="flex items-center gap-4 p-4">
-                            <Briefcase />
-                            <p>Events</p>
-                        </div>
-                        <div className="flex items-center gap-4 p-4 rounded-lg bg-red-100/50 border-b-2 border-red-300">
-                            <User />
-                            <p>Members</p>
-                        </div>
-                        <div className="flex items-center gap-2 mt-60">
+                    <div className="fixed">
+                        <nav className="flex flex-col gap-4 bg-white px-4 py-8 border-red-200 border rounded-md shadow">
+                            <div className="flex items-center gap-4 p-2">
+                                <Home />
+                                <p>Home</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-2">
+                                <Briefcase />
+                                <p>Events</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-2 rounded bg-red-100/50 border-b-2 border-red-300">
+                                <User />
+                                <p>Members</p>
+                            </div>
+                        </nav>
+                        <div className="flex items-center gap-2 px-4 py-2 mt-4 bg-white rounded-md border border-red-200 shadow">
                             <img
                                 src="/src/assets/profil.jpg"
                                 alt="Foto Profil"
@@ -39,7 +41,7 @@ export default function MembersPage() {
                                 <p className="font-bold">
                                     Raditya Atallahasyrif Rachmadie
                                 </p>
-                                <p className="leading-4 text-gray-600 text-sm">
+                                <p className="leading-4 text-gray-700 text-sm">
                                     Kepala Departemen Internal
                                 </p>
                             </div>
